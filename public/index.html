@@ -11,7 +11,7 @@ Although you can use them, for a more unique website, replace these images with 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Business 2</title>
+    <title>Shortened URL by Jacob Ayokunle</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,8 +22,8 @@ Although you can use them, for a more unique website, replace these images with 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <!-- Custom Fonts from Google -->
@@ -34,188 +34,111 @@ Although you can use them, for a more unique website, replace these images with 
 
 <body>
 
-    <!-- Navigation -->
-    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                	<span class="glyphicon glyphicon-fire"></span> 
-                	SHORT URL
-                </a>
-            </div>
-            <!-- Navbar links -->
-        </div><!-- /.container -->
-    </nav>
-
-	<!-- Header -->
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h2> Short your URL with just one click</h2>
-                <form action="create.php" method="post" id="short_url_form">
-                    <p>Enter URL below</p>
-                    <pre id="error_messages" style="display: none"></pre>
-                    <input name="url" type="url" class="form-control" id="url" placeholder="URL eg. http://konga.com/kongapay?k_id=aderopoa&multichoice=west&referal=newsletter">
-                    <br>
-                    <input type="submit" class="btn btn-primary btn-lg" value="Shorten URL">
-                </form>
-
-                <br>
-                <form id="success_result" style="display: none">
-                    <hr>
-                    <br>
-                    <h3>Shortened URL</h3>
-
-                    <div class="form-group">
-                        <div class="col-md-6 col-md-offset-3">
-                            <input type="url" class="form-control" id="copyTarget" readonly value="Shortened URL">
-                        </div>
-                    </div>
-
-                    <br><br>
-                    <div class="form-group">
-                        <div class="col-md-6 col-md-offset-3">
-                            <button type="submit" class="btn btn-default" id="copyButton">Copy Shortened URL</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+<!-- Navigation -->
+<nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Logo and responsive toggle -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-fire"></span>
+                SHORT URL
+            </a>
         </div>
-    </header>
+        <!-- Navbar links -->
+    </div><!-- /.container -->
+</nav>
 
-	<!-- Intro Section -->
-    <section class="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                	<span class="glyphicon glyphicon-apple" style="font-size: 60px"></span>
-                    <h2 class="section-heading">Feel free to use and implement anytime and anywhere for free.</h2>
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h2> Short your URL with just one click</h2>
+            <form action="create.php" method="post" id="short_url_form">
+                <p>Enter URL below</p>
+                <pre id="error_messages" style="display: none"></pre>
+                <input name="url" type="url" class="form-control" id="url" placeholder="URL eg. http://konga.com/kongapay?k_id=aderopoa&multichoice=west&referal=newsletter">
+                <br>
+                <input type="submit" class="btn btn-primary btn-lg" value="Shorten URL">
+            </form>
+
+            <br>
+            <form id="success_result" style="display: none">
+                <hr>
+                <br>
+                <h3>Shortened URL</h3>
+
+                <div class="form-group">
+                    <div class="col-md-6 col-md-offset-3">
+                        <input type="url" class="form-control" id="copyTarget" readonly value="Shortened URL">
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="form-group">
+                    <div class="col-md-6 col-md-offset-3">
+                        <button type="submit" class="btn btn-default" id="copyButton">Copy Shortened URL</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <span class="glyphicon glyphicon-apple" style="font-size: 60px"></span>
+                <h2 class="section-heading">Feel free to use and implement anytime and anywhere for free.</h2>
                     <pre style="text-align: justify">
-&#x3C;form action=&#x22;http://ayokunle.com/create.php&#x22; method=&#x22;post&#x22;&#x3E;
+&#x3C;form action=&#x22;http://tiny.ayokunle.com/create.php&#x22; method=&#x22;post&#x22;&#x3E;
     &#x3C;input name=&#x22;url&#x22; type=&#x22;url&#x22;&#x3E;
     &#x3C;input type=&#x22;submit&#x22;&#x3E;
 &#x3C;/form&#x3E;
 </pre>
-                    <p class="text-light">Also feel free to clone and improve. <a href="https://github.com/aderopoa/shortenedurl" target="_blank">https://github.com/aderopoa/shortenedurl</a> </p>
-                </div>
+                <p class="text-light">Also feel free to clone and improve. <a href="https://github.com/aderopoa/shortenedurl" target="_blank" style="color: white">https://github.com/aderopoa/shortenedurl</a> </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-	<!-- Content 1 -->
-    <section class="content">
+<!-- Footer -->
+<footer class="page-footer">
+
+    <!-- Contact Us -->
+    <div class="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <img class="img-responsive img-circle center-block" src="images/microphone.jpg" alt="">
-                </div>
-                <div class="col-sm-6">
-                	<h2 class="section-header">Best in Class</h2>
-                	<p class="lead text-muted">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-                	<a href="#" class="btn btn-primary btn-lg">Classify It</a>
-                </div>                
-                
-            </div>
+            <h2 class="section-heading">Contact Me</h2>
+            <p><span class="fa fa-twitter fa-fw"></span><a href="https://www.twitter.com/jayrobzy" target="_blank">@jayrobzy</a></p>
+            <p><span class="fa fa-facebook fa-fw"></span><a href="https://www.facebook.com/robzy" target="_blank">https://www.facebook.com/robzy</a></p>
+            <p><span class="fa fa-linkedin fa-fw"></span><a href="http://linkedin.com/pub/aderopo-ayokunle/44/6a/a7b/" target="_blank">LinkedIn</a></p>
+            <p><span class="fa fa-github fa-fw"></span><a href="https://github.com/aderopoa" target="_blank">GitHub</a></p>
+            <p><span class="fa fa-bitbucket fa-fw"></span><a href="https://bitbucket.com/aderopoa" target="_blank">Bitbucket</a></p>
+            <p><span class="fa fa-envelope fa-fw"></span><a href="mailto:jacob@ayokunle.com">jacob@ayokunle.com</a></p>
         </div>
-    </section>
+    </div>
 
-	<!-- Content 2 -->
-     <section class="content content-2">
+    <!-- Copyright etc -->
+    <div class="small-print">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                	<h2 class="section-header">Superior Quality</h2>
-                	<p class="lead text-light">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-                	<a href="#" class="btn btn-default btn-lg">Test It</a>
-                </div>    
-                <div class="col-sm-6">
-                    <img class="img-responsive img-circle center-block" src="images/iphone.jpg" alt="">
-                </div>            
-                
-            </div>
+            <p>Copyright &copy; ayokunle.com 2016</p>
         </div>
-    </section>    
+    </div>
 
-    <!-- Promos -->
-	<div class="container-fluid">
-        <div class="row promo">
-        	<a href="#">
-				<div class="col-md-4 promo-item item-1">
-					<h3>
-						Unleash
-					</h3>
-				</div>
-            </a>
-            <a href="#">
-				<div class="col-md-4 promo-item item-2">
-					<h3>
-						Synergize
-					</h3>
-				</div>
-            </a>
-			
-			<a href="#">
-				<div class="col-md-4 promo-item item-3">
-					<h3>
-						Procrastinate
-					</h3>
-				</div>
-            </a>
-        </div>
-    </div><!-- /.container-fluid -->
+</footer>
 
-	<!-- Content 3 -->
-     <section class="content content-3">
-        <div class="container">
-			<h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br> Sanity Check</h2>
-			<p class="lead text-muted">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p> 
-                    <a href="#" class="btn btn-primary btn-lg">Check Now</a>
-        </div>
-    </section>
-    
-	<!-- Footer -->
-    <footer class="page-footer">
-    
-    	<!-- Contact Us -->
-        <div class="contact">
-        	<div class="container">
-				<h2 class="section-heading">Contact Me</h2>
-				<p><span class="fa fa-twitter fa-fw"></span><a href="https://www.twitter.com/jayrobzy" target="_blank">@jayrobzy</a></p>
-				<p><span class="fa fa-facebook fa-fw"></span><a href="https://www.facebook.com/robzy" target="_blank">https://www.facebook.com/robzy</a></p>
-				<p><span class="fa fa-linkedin fa-fw"></span><a href="http://linkedin.com/pub/aderopo-ayokunle/44/6a/a7b/" target="_blank">LinkedIn</a></p>
-				<p><span class="fa fa-github fa-fw"></span><a href="https://github.com/aderopoa" target="_blank">GitHub</a></p>
-				<p><span class="fa fa-bitbucket fa-fw"></span><a href="https://bitbucket.com/aderopoa" target="_blank">Bitbucket</a></p>
-				<p><span class="fa fa-envelope fa-fw"></span><a href="mailto:jacob@ayokunle.com">jacob@ayokunle.com</a></p>
-        	</div>
-        </div>
-        	
-        <!-- Copyright etc -->
-        <div class="small-print">
-        	<div class="container">
-        		<p>Copyright &copy; ayokunle.com 2016</p>
-        	</div>
-        </div>
-        
-    </footer>
+<!-- jQuery -->
+<script src="js/jquery-1.11.3.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    
-    <!-- Custom Javascript -->
-    <script src="js/custom.js"></script>
+<!-- Custom Javascript -->
+<script src="js/custom.js"></script>
 
 </body>
 
